@@ -170,10 +170,7 @@ namespace Olefir_Kuz_True_Kontr
             //ChangeRgb(pictureBox1.Image);
             ChangeRgb(new Bitmap(path));
         }
-        private void ShowMAtrix()
-        {
 
-        }
 
     }
 }
