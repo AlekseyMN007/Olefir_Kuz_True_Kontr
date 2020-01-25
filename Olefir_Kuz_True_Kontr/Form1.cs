@@ -81,7 +81,7 @@ namespace Olefir_Kuz_True_Kontr
             }
             pictureBox2.Image = trueBmp;
             //System.Threading.Thread.Sleep(1000);
-            //SaveFile(trueBmp);
+            //SaveFile(trueBmp); 
             
         }
 
@@ -118,7 +118,13 @@ namespace Olefir_Kuz_True_Kontr
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            notifyIcon1.ShowBalloonTip(1000, "Message", "My Boy)", ToolTipIcon.Error);
             ChangeRgb(pictureBox1.Image);
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
