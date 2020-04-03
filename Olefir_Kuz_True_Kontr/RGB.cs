@@ -9,12 +9,20 @@ namespace Olefir_Kuz_True_Kontr
     class RGB
     {
 
-        private int r;
-        private int g;
-        private int b;
+        private int _r;
+        private int _g;
+        private int _b;
 
-        public int R { get => r; set => r = value; }
-        public int G { get => g; set => g = value; }
-        public int B { get => b; set => b = value; }
+        public int R { get => _r; set => _r = value; }
+        public int G { get => _g; set => _g = value; }
+        public int B { get => _b; set => _b = value; }
+
+        public RGB (int b,int g, int r)
+        {
+            _r = r;
+            _b = b;
+            _g = g;
+        }
+
     }
 }
